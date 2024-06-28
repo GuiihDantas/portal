@@ -11,7 +11,8 @@ money = requests.get('https://dolarhoje.com.br')
 money_text = money.text
 
 # Verificando a posição do str US$ -> 3876
-money_uss = money_text.find("US$") 
+money_uss = money_text.find("US$")   
+
 
 # Posição "hoje" -> 3941
 money_day = money_text.index('hoje', 3876)
